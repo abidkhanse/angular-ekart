@@ -24,6 +24,14 @@ export class SearchComponent {
     this.searchChangedEmitter.emit(this.searchText)
   }
 
+  updateSearchText(text: HTMLInputElement) {
+
+    this.searchText = text.value
+    this.onSearchChanged()
+
+
+  }
+
 
 
 
